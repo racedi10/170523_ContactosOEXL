@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingTop="@dimen/margen_superior"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        tools:context="mx.com.oexl.a170523_contactosoexl.MainActivity"
+        >
+
+        <ImageView
+            android:id="@+id/logo_oexl"
+            android:src="@drawable/logotipo_oexl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            />
+
+        <!-- Campo nombre -->
+
+        <LinearLayout
+            android:id="@+id/area_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/logo_oexl"
+            android:layout_marginTop="@dimen/margen_superior"
+            >
+
+            <ImageView
+                android:id="@+id/ima_nombre"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/phone_book"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/campo_nombre"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombre"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- Campo teléfono -->
+
+        <LinearLayout
+            android:id="@+id/area_telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/area_nombre"
+            android:layout_marginTop="@dimen/margen_superior"
+            >
+
+            <ImageView
+                android:id="@+id/ima_telefono"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/tel_fono_48"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_telefono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/campo_telefono"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/telefono"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <!-- Campo email -->
+
+        <LinearLayout
+            android:id="@+id/area_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/area_telefono"
+            android:layout_marginTop="@dimen/margen_superior"
+            >
+
+            <ImageView
+                android:id="@+id/ima_email"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/arroba"
+                />
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/campo_email"
+                    android:singleLine="true"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <!-- Descripción -->
+
+        <LinearLayout
+            android:id="@+id/area_descripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/area_email"
+            android:layout_marginTop="@dimen/margen_superior"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/campo_descripcion"
+                    android:singleLine="true"
+                    android:inputType="textMultiLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/descripcion"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <!-- Calendario -->
+
+        <LinearLayout
+            android:id="@+id/area_calendario"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_below="@+id/area_descripcion"
+            android:layout_marginTop="@dimen/margen_superior"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="305dp"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/nacimiento" />
+
+                <DatePicker
+                    android:id="@+id/tvPicker"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:calendarViewShown="false"
+                    android:datePickerMode="spinner" />
+
+                <Button
+                    android:id="@+id/btnGet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/guardar"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/area_calendario"
+            android:text="@string/btn_guardar"            />
+
+    </RelativeLayout>
+
+</ScrollView>

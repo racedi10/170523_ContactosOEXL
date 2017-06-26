@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Contactos OEXL</string>
+    <string name="nombre">Nombre:</string>
+    <string name="telefono">Telefono:</string>
+    <string name="email">Email:</string>
+    <string name="descripcion">Descrición contacto:</string>
+    <string name="nacimiento">Fecha de nacimiento:</string>
+    <string name="btn_guardar">Guardar</string>
+    <string name="error_nombre">Ingresa un nombre</string>
+    <string name="error_telefono">Ingresa un número de teléfono</string>
+    <string name="error_email">Ingresa un email</string>
+    <string name="error_descripcion">Ingresa un email</string>
+    <string name="guardar">Guardar fecha</string>
+
+
+    <string name="titulo2">Confirmar datos</string>
+    <string name="nombre2">Nombre:</string>
+    <string name="telefono2">Telefono:</string>
+    <string name="email2">Email:</string>
+    <string name="descripcion2">Descrición contacto:</string>
+    <string name="nacimiento2">Fecha de nacimiento:</string>
+    <string name="btnEditar">Editar datos</string>
+</resources>
